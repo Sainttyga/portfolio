@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lindokuhle Zwane — IT Graduate & Aspiring Software Developer. Full-stack MERN, Java, C# portfolio." />
+  <meta name="theme-color" content="#012B1D" />
+  <title>Lindokuhle Zwane — Software Developer</title>
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lindokuhle Zwane — Aspiring Software Developer" />
+  <meta property="og:description" content="IT graduate (distinction) building full-stack apps with the MERN stack, Java &amp; C#. View projects, skills &amp; certifications." />
+  <meta property="og:image" content="https://sainttyga.github.io/assets/img/og-image.jpg" />
+  <meta property="og:url" content="https://sainttyga.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lindokuhle Zwane — Aspiring Software Developer" />
+  <meta name="twitter:description" content="Full-stack MERN, Java &amp; C# developer portfolio — projects, skills, certifications." />
+  <meta name="twitter:image" content="https://sainttyga.github.io/assets/img/og-image.jpg" />
+
+  <!-- structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lindokuhle Zwane",
+    "jobTitle": "Aspiring Software Developer",
+    "email": "mailto:londonleendouh111@gmail.com",
+    "url": "https://sainttyga.github.io/",
+    "image": "https://sainttyga.github.io/assets/img/portrait-headshot.png",
+    "address": { "@type": "PostalAddress", "addressLocality": "Soweto, Johannesburg", "addressCountry": "ZA" },
+    "sameAs": [
+      "https://github.com/Sainttyga",
+      "https://linkedin.com/in/lindokuhle-zwane-6b0077288"
+    ],
+    "knowsAbout": ["JavaScript", "React", "Node.js", "MongoDB", "Java", "C#", "SQL", "PHP", "Python"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner mono">
+      <span class="pre-logo">&lt;LZ <span class="accent">/&gt;</span></span>
+      <span class="pre-bar"><i></i></span>
+      <span class="pre-tag">compiling portfolio…</span>
+    </div>
+  </div>
+
+  <!-- Cursor glow (desktop) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-logo mono">&lt;LZ <span class="accent">/&gt;</span></a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about" class="nav-link"><span class="mono nav-num">01.</span>About</a>
+      <a href="#skills" class="nav-link"><span class="mono nav-num">02.</span>Skills</a>
+      <a href="#projects" class="nav-link"><span class="mono nav-num">03.</span>Projects</a>
+      <a href="#experience" class="nav-link"><span class="mono nav-num">04.</span>Experience</a>
+      <a href="#certificates" class="nav-link"><span class="mono nav-num">05.</span>Certificates</a>
+      <a href="#contact" class="nav-link"><span class="mono nav-num">06.</span>Contact</a>
+      <button class="btn btn-peach btn-sm nav-cta" id="navViewCv">View CV</button>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+
+      <aside class="social-rail" aria-label="Social links">
+        <span class="rail-line" aria-hidden="true"></span>
+        <a href="https://github.com/Sainttyga" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.73.81 1.17 1.83 1.17 3.09 0 4.42-2.68 5.39-5.24 5.67.41.36.78 1.05.78 2.13v3.16c0 .3.2.67.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/lindokuhle-zwane-6b0077288" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+        </a>
+        <a href="mailto:londonleendouh111@gmail.com" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+        <span class="rail-code mono" aria-hidden="true">&lt;/&gt;</span>
+        <span class="rail-line" aria-hidden="true"></span>
+      </aside>
+
+      <div class="hero-inner">
+        <div class="hero-left reveal reveal-left">
+          <p class="mono hero-hello"><span class="accent">&lt;</span> Hello, I'm <span class="accent">/&gt;</span></p>
+          <h1 class="hero-name">
+            <span class="line oneline">LINDOKUHLE</span>
+            <span class="line outline">ZWANE</span>
+          </h1>
+        </div>
+
+        <div class="hero-right reveal reveal-right">
+          <div class="hero-portrait" data-tilt>
+            <div class="portrait-glow" aria-hidden="true"></div>
+            <img class="rim" src="assets/img/portrait-hero.webp" alt="" aria-hidden="true" />
+            <img fetchpriority="high" src="assets/img/portrait-hero.webp" alt="Portrait of Lindokuhle Zwane" />
+            <div class="portrait-shadow" aria-hidden="true"></div>
+          </div>
+
+          <div class="code-card mono" data-tilt aria-hidden="true">
+            <div class="code-card-bar"><i></i><i></i><i></i><span>dev.js</span></div>
+            <pre><code><span class="k">const</span> <span class="v">developer</span> = {
+  <span class="p">name</span>: <span class="s">'Lindokuhle Zwane'</span>,
+  <span class="p">role</span>: <span class="s">'Aspiring Software Developer'</span>,
+  <span class="p">stack</span>: [<span class="s">'MERN'</span>, <span class="s">'Java'</span>, <span class="s">'C#'</span>, <span class="s">'SQL'</span>],
+  <span class="p">education</span>: <span class="s">'Dip. IT — Software Development'</span>,
+  <span class="p">based</span>: <span class="s">'Soweto, Johannesburg'</span>,
+  <span class="p">hireable</span>: <span class="k">true</span>
+};</code></pre>
+          </div>
+        </div>
+
+        <div class="hero-rest reveal reveal-left">
+          <p class="hero-role mono">
+            <span class="prompt">$</span> <span id="typed"></span><span class="caret">▌</span>
+          </p>
+          <p class="hero-tagline">
+            IT graduate crafting clean, efficient code — full-stack web apps with the
+            <span class="accent">MERN stack</span>, plus desktop &amp; enterprise solutions in
+            <span class="accent">Java</span> and <span class="accent">C#</span>.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-green">View My Work <span class="arrow">→</span></a>
+            <a href="assets/docs/Lindokuhle_Zwane_CV.pdf" download class="btn btn-ghost">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
+          <p class="mono hero-status"><span class="pulse-dot"></span> Available for junior roles, internships &amp; learnerships</p>
+        </div>
+      </div>
+
+      <!-- marquee -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marqueeTrack"></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="mono section-tag"><span class="accent">//</span> about-me</p>
+        <div class="about-grid">
+          <div class="about-photo reveal reveal-left" data-tilt>
+            <div class="about-photo-bg" aria-hidden="true"></div>
+            <img loading="lazy" src="assets/img/portrait-about.webp" alt="Lindokuhle Zwane" />
+            <img class="rim" loading="lazy" src="assets/img/portrait-about.webp" alt="" aria-hidden="true" />
+            <div class="about-photo-badge mono">distinction<br />graduate</div>
+          </div>
+          <div class="about-text reveal reveal-right">
+            <h2 class="section-title">Turning ideas into <span class="accent">scalable</span>, human-centred software.</h2>
+            <p>
+              I'm a motivated IT graduate from Soweto, Johannesburg, with a strong passion for
+              software development, data-driven problem solving and continuous learning. I build
+              full-stack web applications with the MERN stack and desktop &amp; enterprise
+              applications in Java and C#.
+            </p>
+            <p>
+              I'm known for being disciplined, reliable and highly adaptable — with strong
+              analytical thinking and a commitment to writing clean, efficient code. I'm currently
+              advancing my studies with an <strong>Advanced Diploma in Application Development (NQF 7)</strong>,
+              and eager to contribute to impactful projects as I grow into a professional software engineer.
+            </p>
+            <ul class="about-facts mono">
+              <li><span class="p">location</span><span>Soweto, Johannesburg, ZA</span></li>
+              <li><span class="p">languages</span><span>English · isiZulu</span></li>
+              <li><span class="p">focus</span><span>Full-Stack · Desktop · APIs</span></li>
+              <li><span class="p">open_to</span><span>Junior roles · Internships · Learnerships</span></li>
+            </ul>
+            <div class="stats-row">
+              <div class="stat"><span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span><p>Public Repos</p></div>
+              <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span><p>Certifications</p></div>
+              <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span><p>Technologies</p></div>
+              <div class="stat"><span class="stat-num">NQF 7</span><p>In Progress</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="mono section-tag"><span class="accent">//</span> skills &amp; services</p>
+        <h2 class="section-title reveal">What I <span class="accent">bring</span> to the table</h2>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon mono">&lt;/&gt;</div>
+            <h3>Frontend Development</h3>
+            <p>Responsive, accessible interfaces with modern tooling.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-html5"></i><em>HTML</em></span><span class="tag-icon"><i class="ic ic-css"></i><em>CSS</em></span><span class="tag-icon"><i class="ic ic-javascript"></i><em>JavaScript</em></span><span class="tag-icon"><i class="ic ic-react"></i><em>React</em></span><span class="tag-icon"><i class="ic ic-vite"></i><em>Vite</em></span><span class="tag-icon"><i class="ic ic-tailwindcss"></i><em>Tailwind CSS</em></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon mono">fn()</div>
+            <h3>Backend &amp; APIs</h3>
+            <p>Secure RESTful services and business logic.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-nodedotjs"></i><em>Node.js</em></span><span class="tag-icon"><i class="ic ic-express"></i><em>Express</em></span><span class="tag-icon"><i class="ic ic-openapiinitiative"></i><em>REST APIs</em></span><span class="tag-icon"><i class="ic ic-jsonwebtokens"></i><em>JWT Auth</em></span><span class="tag-icon"><i class="ic ic-php"></i><em>PHP</em></span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon mono">{}</div>
+            <h3>Desktop &amp; Enterprise</h3>
+            <p>Object-oriented applications built for reliability.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-java"></i><em>Java</em></span><span class="tag-icon"><i class="ic ic-csharp"></i><em>C#</em></span><span>OOP</span><span>GUI</span><span>Unit Testing</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon mono">db</div>
+            <h3>Databases</h3>
+            <p>Designing and querying relational &amp; NoSQL stores.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-mysql"></i><em>MySQL</em></span><span class="tag-icon"><i class="ic ic-mongodb"></i><em>MongoDB</em></span><span class="tag-icon"><i class="ic ic-oracle"></i><em>Oracle DB</em></span><span>Data Modelling</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon mono">git</div>
+            <h3>Workflow &amp; Quality</h3>
+            <p>Version control, debugging and collaborative delivery.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-git"></i><em>Git</em></span><span class="tag-icon"><i class="ic ic-github"></i><em>GitHub</em></span><span>Debugging</span><span>Testing</span><span>Agile</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon mono">py</div>
+            <h3>Data &amp; Scripting</h3>
+            <p>Python for data handling, analysis and automation.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-python"></i><em>Python</em></span><span class="tag-icon"><i class="ic ic-pandas"></i><em>Pandas</em></span><span>Matplotlib</span><span>File Handling</span></div>
+          </article>
+        </div>
+
+        <div class="proficiency reveal reveal-left">
+          <h3 class="mono prof-title"><span class="accent">$</span> proficiency --levels</h3>
+          <div class="bars">
+            <div class="bar" data-level="80">
+              <span class="bar-label mono">proficient
+                <span class="bar-icons">
+                  <span class="tag-icon lg"><i class="ic ic-java"></i><em>Java</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-csharp"></i><em>C#</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-mysql"></i><em>MySQL</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-html5"></i><em>HTML</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-css"></i><em>CSS</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-git"></i><em>Git</em></span>
+                </span>
+              </span>
+              <div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct mono">80%</span>
+            </div>
+            <div class="bar" data-level="65">
+              <span class="bar-label mono">intermediate
+                <span class="bar-icons">
+                  <span class="tag-icon lg"><i class="ic ic-javascript"></i><em>JavaScript</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-react"></i><em>React</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-nodedotjs"></i><em>Node.js</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-express"></i><em>Express</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-mongodb"></i><em>MongoDB</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-oracle"></i><em>Oracle DB</em></span>
+                  <span class="tag-icon lg"><i class="ic ic-php"></i><em>PHP</em></span>
+                </span>
+              </span>
+              <div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct mono">65%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="mono section-tag"><span class="accent">//</span> selected-work</p>
+        <div class="section-head">
+          <h2 class="section-title reveal">Projects that <span class="accent">ship</span></h2>
+          <a class="mono gh-link" href="https://github.com/Sainttyga" target="_blank" rel="noopener">github.com/Sainttyga ↗</a>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured reveal reveal-left" data-tilt>
+            <div class="project-top mono"><span class="proj-type">featured · full-stack</span>
+              <a href="https://github.com/Sainttyga/MERN-Stack_Task-Manager" target="_blank" rel="noopener" aria-label="Open repo">↗</a>
+            </div>
+            <h3>MERN Task Manager</h3>
+            <p>
+              Full-stack task management app — secure JWT authentication, RESTful CRUD APIs and a
+              responsive UI built with Tailwind CSS + Vite. Organize, track and complete work through
+              a secure, intuitive platform.
+            </p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-mongodb"></i><em>MongoDB</em></span><span class="tag-icon"><i class="ic ic-express"></i><em>Express</em></span><span class="tag-icon"><i class="ic ic-react"></i><em>React</em></span><span class="tag-icon"><i class="ic ic-nodedotjs"></i><em>Node.js</em></span><span class="tag-icon"><i class="ic ic-jsonwebtokens"></i><em>JWT</em></span><span class="tag-icon"><i class="ic ic-tailwindcss"></i><em>Tailwind CSS</em></span></div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top mono"><span class="proj-type">desktop · java</span>
+              <a href="https://github.com/Sainttyga/Easy-Kanban-Boards" target="_blank" rel="noopener" aria-label="Open repo">↗</a>
+            </div>
+            <h3>EasyKanban Boards</h3>
+            <p>Java desktop Kanban board — user registration, login and task management built on solid OOP principles with thorough testing.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-java"></i><em>Java</em></span><span>OOP</span><span>Swing</span><span>Testing</span></div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top mono"><span class="proj-type">real-time · web</span>
+              <a href="https://github.com/Sainttyga/socketio-chat" target="_blank" rel="noopener" aria-label="Open repo">↗</a>
+            </div>
+            <h3>Socket.io Chat</h3>
+            <p>Real-time chat application powered by Socket.io — instant messaging with live connection events.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-javascript"></i><em>JavaScript</em></span><span class="tag-icon"><i class="ic ic-socketdotio"></i><em>Socket.io</em></span><span class="tag-icon"><i class="ic ic-nodedotjs"></i><em>Node.js</em></span></div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top mono"><span class="proj-type">client · web</span>
+              <a href="https://github.com/Sainttyga/Phambili_Ma-AfricaWeb" target="_blank" rel="noopener" aria-label="Open repo">↗</a>
+            </div>
+            <h3>Phambili Ma-Africa Website</h3>
+            <p>Organisation website built during Work Integrated Learning — real client requirements, real deadlines.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-javascript"></i><em>JavaScript</em></span><span class="tag-icon"><i class="ic ic-html5"></i><em>HTML</em></span><span class="tag-icon"><i class="ic ic-css"></i><em>CSS</em></span></div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top mono"><span class="proj-type">desktop · java</span>
+              <a href="https://github.com/Sainttyga/Student-Management-System" target="_blank" rel="noopener" aria-label="Open repo">↗</a>
+            </div>
+            <h3>Student Management System</h3>
+            <p>Java application for managing student records — clean data handling and CRUD operations.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-java"></i><em>Java</em></span><span>OOP</span><span>CRUD</span></div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-top mono"><span class="proj-type">data · python</span>
+              <a href="https://github.com/Sainttyga/COVID-19-Global-Data-Tracker-Project" target="_blank" rel="noopener" aria-label="Open repo">↗</a>
+            </div>
+            <h3>COVID-19 Data Tracker</h3>
+            <p>Python data tracker analysing and visualising global COVID-19 datasets with Pandas &amp; Matplotlib.</p>
+            <div class="tags mono"><span class="tag-icon"><i class="ic ic-python"></i><em>Python</em></span><span class="tag-icon"><i class="ic ic-pandas"></i><em>Pandas</em></span><span>Matplotlib</span></div>
+          </article>
+        </div>
+
+        <div class="gh-strip mono reveal reveal-zoom" id="ghStrip">
+          <span><b id="ghRepos">—</b> public repos</span>
+          <span class="dot">·</span>
+          <span><b id="ghFollowers">—</b> followers</span>
+          <span class="dot">·</span>
+          <a href="https://github.com/Sainttyga?tab=repositories" target="_blank" rel="noopener">browse all repositories ↗</a>
+        </div>
+
+        <div class="gh-more" id="ghMore" aria-label="More repositories"></div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <p class="mono section-tag"><span class="accent">//</span> experience &amp; education</p>
+        <h2 class="section-title reveal">Where I've <span class="accent">grown</span></h2>
+        <p class="section-sub reveal">My work experience so far sits outside my qualification — but every role sharpened the communication, discipline and problem-solving I bring to code.</p>
+
+        <div class="exp-grid">
+          <div class="timeline">
+            <h3 class="mono col-head"><span class="accent">$</span> experience.log</h3>
+            <div class="tl-item reveal reveal-left">
+              <span class="tl-dot"></span>
+              <span class="tl-date mono">Feb 2025 — Dec 2025</span>
+              <h4>Work Integrated Learning <span class="chip chip-green mono">software dev</span></h4>
+              <p class="tl-org">Rosebank College · Phambili Ma-Africa — Johannesburg</p>
+              <p>Collaborated on real-world software development projects. Applied development principles with attention to detail and adapted to changing requirements and deadlines.</p>
+            </div>
+            <div class="tl-item reveal reveal-left">
+              <span class="tl-dot"></span>
+              <span class="tl-date mono">Mar 2026 — May 2026</span>
+              <h4>Junior Sales Agent <span class="chip mono">client-facing</span></h4>
+              <p class="tl-org">SDC (Assupol) — Johannesburg</p>
+              <p>Field sales and telephonic follow-ups. Communicated with clients, handled objections and built resilience under targets.</p>
+            </div>
+            <div class="tl-item reveal reveal-left">
+              <span class="tl-dot"></span>
+              <span class="tl-date mono">Feb 2025 — Feb 2026</span>
+              <h4>Generic Management Learnership <span class="chip mono">leadership</span></h4>
+              <p class="tl-org">SDC (DWR Distribution) — Johannesburg</p>
+              <p>Workplace communication and teamwork in a professional environment. Developed business administration, operational and leadership skills.</p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <h3 class="mono col-head"><span class="accent">$</span> education.log</h3>
+            <div class="tl-item reveal reveal-right">
+              <span class="tl-dot dot-peach"></span>
+              <span class="tl-date mono">2026 — current</span>
+              <h4>Advanced Diploma in Application Development <span class="chip chip-peach mono">in progress</span></h4>
+              <p class="tl-org">Rosebank College · NQF Level 7</p>
+            </div>
+            <div class="tl-item reveal reveal-right">
+              <span class="tl-dot dot-peach"></span>
+              <span class="tl-date mono">2023 — 2025</span>
+              <h4>Diploma in IT (Software Development) <span class="chip chip-peach mono">distinction</span></h4>
+              <p class="tl-org">Rosebank College · NQF Level 6</p>
+            </div>
+            <div class="tl-item reveal reveal-right">
+              <span class="tl-dot dot-peach"></span>
+              <span class="tl-date mono">2022</span>
+              <h4>National Senior Certificate</h4>
+              <p class="tl-org">Protea Glen Secondary School · UMALUSI - NQF Level 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATES ===== -->
+    <section class="section" id="certificates">
+      <div class="container">
+        <p class="mono section-tag"><span class="accent">//</span> certificates</p>
+        <h2 class="section-title reveal">Verified <span class="accent">credentials</span></h2>
+        <p class="section-sub reveal">Click a certificate to view it. Certificates are view-only — for verification, originals can be provided on request.</p>
+
+        <div class="cert-grid">
+          <button class="cert-card reveal" data-cert="assets/docs/cert-diploma.pdf" data-title="Diploma in IT (Software Development)">
+            <span class="cert-thumb" style="background-image:url('assets/img/thumb-diploma.webp')" aria-hidden="true"></span>
+            <div class="cert-info">
+              <span class="cert-badge mono">the iie</span>
+              <h3>Diploma in IT — Software Development</h3>
+              <p class="cert-org mono">The IIE · Rosebank College — Dec 2025</p>
+              <span class="cert-view mono">view document ↗</span>
+            </div>
+          </button>
+          <button class="cert-card reveal" data-cert="assets/docs/cert-azure-ai.pdf" data-title="Microsoft Certified: Azure AI Fundamentals">
+            <span class="cert-thumb" style="background-image:url('assets/img/thumb-azure.webp')" aria-hidden="true"></span>
+            <div class="cert-info">
+              <span class="cert-badge mono">microsoft</span>
+              <h3>Azure AI Fundamentals</h3>
+              <p class="cert-org mono">Microsoft Certified — Sep 2026 · ID 7464C715CCBA2920</p>
+              <span class="cert-view mono">view document ↗</span>
+            </div>
+          </button>
+          <button class="cert-card reveal" data-cert="assets/docs/cert-plp-mern.pdf" data-title="MERN Full-Stack Development — PLP Academy">
+            <span class="cert-thumb" style="background-image:url('assets/img/thumb-plp.webp')" aria-hidden="true"></span>
+            <div class="cert-info">
+              <span class="cert-badge mono">mern</span>
+              <h3>MERN Full-Stack Development</h3>
+              <p class="cert-org mono">Power Learn Project Academy — 2025 · 16-week program</p>
+              <span class="cert-view mono">view document ↗</span>
+            </div>
+          </button>
+          <button class="cert-card reveal" data-cert="assets/docs/cert-fnb-appdev.pdf" data-title="Full Stack Development — FNB App Academy">
+            <span class="cert-thumb" style="background-image:url('assets/img/thumb-fnb.webp')" aria-hidden="true"></span>
+            <div class="cert-info">
+              <span class="cert-badge mono">fnb</span>
+              <h3>Full Stack Development</h3>
+              <p class="cert-org mono">FNB App Academy — 2025</p>
+              <span class="cert-view mono">view document ↗</span>
+            </div>
+          </button>
+          <div class="cert-card cert-static reveal">
+            <div class="cert-info">
+              <span class="cert-badge mono">training</span>
+              <h3>Basic Stocktake Training</h3>
+              <p class="cert-org mono">Dial-a-Student — 2024</p>
+              <span class="cert-view mono muted">available on request</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <p class="mono section-tag"><span class="accent">//</span> contact</p>
+        <div class="contact-grid">
+          <div class="reveal reveal-left">
+            <h2 class="section-title">Let's build something <span class="accent">together</span>.</h2>
+            <p class="section-sub">Have a role, internship or project in mind? My inbox is always open — I'd love to hear from you.</p>
+
+            <div class="contact-identity">
+              <img class="contact-avatar" loading="lazy" src="assets/img/portrait-headshot.webp" alt="Lindokuhle Zwane" />
+              <div>
+                <strong class="mono">Lindokuhle Zwane</strong>
+                <p class="mono contact-role">software developer</p>
+              </div>
+            </div>
+            <ul class="contact-list mono">
+              <li>
+                <span class="cl-label">email</span>
+                <a href="mailto:londonleendouh111@gmail.com">londonleendouh111@gmail.com</a>
+                <button class="copy-btn mono" id="copyEmail" title="Copy email address">copy</button>
+              </li>
+              <li>
+                <span class="cl-label">phone</span>
+                <a href="tel:+27676260389">+27 67 626 0389</a>
+              </li>
+              <li><span class="cl-label">location</span><span>Soweto, Johannesburg, ZA</span></li>
+              <li>
+                <span class="cl-label">resume</span>
+                <a href="assets/docs/Lindokuhle_Zwane_CV.pdf" id="viewCv">view online ↗</a>
+                <span class="cl-sep">·</span>
+                <a href="assets/docs/Lindokuhle_Zwane_CV.pdf" download>download ↓</a>
+              </li>
+            </ul>
+
+            <div class="socials">
+              <a href="https://github.com/Sainttyga" target="_blank" rel="noopener" aria-label="GitHub" class="social">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.73.81 1.17 1.83 1.17 3.09 0 4.42-2.68 5.39-5.24 5.67.41.36.78 1.05.78 2.13v3.16c0 .3.2.67.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/lindokuhle-zwane-6b0077288" target="_blank" rel="noopener" aria-label="LinkedIn" class="social">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+              </a>
+              <a href="mailto:londonleendouh111@gmail.com" aria-label="Email" class="social">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal reveal-right" id="contactForm">
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form-row">
+              <label>Your Name<input type="text" id="cfName" name="name" required placeholder="Jane Doe" /></label>
+              <label>Your Email<input type="email" id="cfEmail" name="email" required placeholder="jane@company.com" /></label>
+            </div>
+            <label>Subject
+              <select id="cfSubject" name="subject">
+                <option>Job opportunity</option>
+                <option>Internship / Learnership</option>
+                <option>Freelance project</option>
+                <option>Just saying hi</option>
+              </select>
+            </label>
+            <label>Message<textarea id="cfMsg" name="message" rows="5" required placeholder="Tell me about the opportunity..."></textarea></label>
+            <button type="submit" class="btn btn-green btn-full" id="cfSubmit">Send Message <span class="arrow">→</span></button>
+            <p class="mono form-note" id="formStatus">// delivered straight to my inbox</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="nav-logo mono">&lt;LZ <span class="accent">/&gt;</span></a>
+      <p class="mono">designed &amp; built by <span class="accent">Lindokuhle Zwane</span> · © <span id="year">2026</span></p>
+      <p class="mono footer-tag">"first, solve the problem. then, write the code."</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <!-- ===== CERT MODAL (view only) ===== -->
+  <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate viewer" hidden>
+    <div class="cert-modal-backdrop" data-close></div>
+    <div class="cert-modal-box">
+      <div class="cert-modal-head">
+        <span class="mono" id="certTitle">Certificate</span>
+        <span class="mono cert-viewonly">view-only</span>
+        <button class="cert-close" data-close aria-label="Close">✕</button>
+      </div>
+      <div class="cert-modal-body" id="certBody"><!-- injected --></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
