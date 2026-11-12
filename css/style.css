@@ -878,7 +878,26 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     font-size: .62rem; }
   /* the rest of the hero content sits below the picture + floating card */
   .hero-rest { margin-top: 36px; padding-top: 80px; }
-  .cursor-glow, .social-rail { display: none; }
+  .cursor-glow { display: none; }
+
+  /* social rail leaves the hero edge → fixed stack above the back-to-top button */
+  .social-rail {
+    position: fixed;
+    top: auto; left: auto;
+    right: 24px; bottom: 82px;
+    transform: none;
+    gap: 10px;
+    z-index: 900;
+  }
+  .social-rail .rail-line, .social-rail .rail-code { display: none; }
+  .social-rail a {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 12px;
+    background: rgba(1, 34, 22, .92);
+    border: 1px solid var(--line);
+    color: var(--muted);
+  }
+  .social-rail a:hover { color: var(--jungle); border-color: var(--jungle); transform: none; }
 }
 
 @media (max-width: 768px) {
@@ -908,6 +927,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .hero-actions .btn { justify-content: center; }
   .cert-modal-box { height: 82vh; }
   .to-top { width: 40px; height: 40px; right: 16px; bottom: 16px; }
+  .social-rail { right: 16px; bottom: 66px; gap: 8px; }
+  .social-rail a { width: 36px; height: 36px; border-radius: 10px; }
   .bar-icons { display: flex; margin: 10px 0 2px; }
   .gh-strip { border-radius: 18px; }
 }
